@@ -9,6 +9,7 @@ import (
 	_ "github.com/lib/pq"
 )
 
+//go:generate mockery --name=DBService
 type DBService interface {
 	AddRow(message string) error
 }
